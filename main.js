@@ -205,3 +205,27 @@ function animateHero() {
     });
   });
 })();
+
+
+
+/* ─── FLOATING PARTICLES ─── */
+(function initParticles() {
+  const hero = document.getElementById('hero');
+  const colors = ['rgba(0,229,255,0.6)', 'rgba(255,107,53,0.5)', 'rgba(168,255,62,0.5)'];
+
+  for (let i = 0; i < 24; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 3 + 1;
+    p.style.cssText = `
+      width: ${size}px;
+      height: ${size}px;
+      left: ${Math.random() * 100}%;
+      background: ${colors[Math.floor(Math.random() * colors.length)]};
+      animation-duration: ${Math.random() * 15 + 10}s;
+      animation-delay: ${Math.random() * -20}s;
+      box-shadow: 0 0 ${size * 3}px ${colors[Math.floor(Math.random() * colors.length)]};
+    `;
+    hero.appendChild(p);
+  }
+})();

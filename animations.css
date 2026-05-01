@@ -1,0 +1,85 @@
+/* ═══════════════════════════════════════════════════════════
+   ARYAN VEX — BACKGROUND ANIMATIONS
+   File: animations.css
+═══════════════════════════════════════════════════════════ */
+
+/* ─── FLOATING PARTICLES ─── */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float linear infinite;
+}
+@keyframes float {
+  0%   { transform: translateY(100vh) scale(0); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateY(-100px) scale(1); opacity: 0; }
+}
+
+/* ─── MOVING GRADIENT ORBS ─── */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  animation: orbFloat ease-in-out infinite;
+}
+.orb-1 {
+  width: 500px; height: 500px;
+  background: rgba(0, 229, 255, 0.07);
+  top: 20%; left: 10%;
+  animation-duration: 12s;
+}
+.orb-2 {
+  width: 400px; height: 400px;
+  background: rgba(255, 107, 53, 0.06);
+  top: 50%; right: 5%;
+  animation-duration: 15s;
+  animation-delay: -5s;
+}
+.orb-3 {
+  width: 300px; height: 300px;
+  background: rgba(168, 255, 62, 0.05);
+  bottom: 10%; left: 40%;
+  animation-duration: 10s;
+  animation-delay: -3s;
+}
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(40px, -30px) scale(1.05); }
+  66%       { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+/* ─── SCANNING LINE ─── */
+#hero::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(0, 229, 255, 0.3) 50%,
+    transparent 100%
+  );
+  animation: scan 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+@keyframes scan {
+  0%   { top: 0%;   opacity: 0; }
+  5%   { opacity: 1; }
+  95%  { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* ─── CORNER DECORATIONS ─── */
+.hero-corner {
+  position: absolute;
+  width: 60px; height: 60px;
+  pointer-events: none; z-index: 1;
+}
+.hero-corner-tl { top: 32px; left: 32px; border-top: 1px solid rgba(0,229,255,0.3); border-left: 1px solid rgba(0,229,255,0.3); }
+.hero-corner-tr { top: 32px; right: 32px; border-top: 1px solid rgba(0,229,255,0.3); border-right: 1px solid rgba(0,229,255,0.3); }
+.hero-corner-bl { bottom: 32px; left: 32px; border-bottom: 1px solid rgba(0,229,255,0.3); border-left: 1px solid rgba(0,229,255,0.3); }
+.hero-corner-br { bottom: 32px; right: 32px; border-bottom: 1px solid rgba(0,229,255,0.3); border-right: 1px solid rgba(0,229,255,0.3); }
