@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aryan Vex — Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       CUSTOM CURSOR
+  ════════════════════════════════════════════ -->
+  <div id="cursor">
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       LOADER
+  ════════════════════════════════════════════ -->
+  <div id="loader">
+    <div id="loader-text">
+      <span>A</span><span>r</span><span>y</span><span>a</span><span>n</span>
+      <span>&nbsp;</span>
+      <span>V</span><span>e</span><span>x</span>
+    </div>
+    <div id="loader-bar-wrap">
+      <div id="loader-bar"></div>
+    </div>
+    <div id="loader-percent">0%</div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">aryan<span>.vex</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Journey</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-glow"></div>
+    <div class="hero-bg-glow2"></div>
+
+    <p class="hero-eyebrow" id="eyebrow">Frontend Developer — Open to Opportunities</p>
+
+    <h1 class="hero-name" id="heroName">
+      <span class="line"><span class="inner">Aryan</span></span>
+      <span class="line"><span class="inner accent-word">Vex.</span></span>
+    </h1>
+
+    <p class="hero-tagline" id="heroTagline">
+      I build interfaces that people <em>feel</em>, not just see.
+    </p>
+
+    <div class="hero-cta" id="heroCta">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-secondary">Let's Talk</a>
+    </div>
+
+    <div class="hero-scroll-hint" id="scrollHint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <div class="hero-stats" id="heroStats">
+      <div class="stat-item">
+        <span class="stat-num">12+</span>
+        <span class="stat-label">Projects Built</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">8+</span>
+        <span class="stat-label">Real-World Apps</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">∞</span>
+        <span class="stat-label">Lines Debugged</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        <div class="about-image-box">
+          <div class="avatar-initials">AV</div>
+          <div class="avatar-code">
+            &gt; const dev = {<br>
+            &nbsp;&nbsp;name: "Aryan Vex",<br>
+            &nbsp;&nbsp;status: "building",<br>
+            &nbsp;&nbsp;coffee: true<br>
+            }
+          </div>
+        </div>
+        <div class="about-badge">Available for Work</div>
+        <div class="about-frame-line"></div>
+      </div>
+      <div class="about-text">
+        <h3 class="reveal">Frontend developer with a design eye and a debugging mindset.</h3>
+        <p class="reveal reveal-delay-1">
+          Hey! I'm <strong>Aryan Vex</strong> — a self-taught frontend developer obsessed with
+          creating web experiences that are both beautiful and performant. I started with plain
+          HTML and CSS, fell in love with JavaScript, and now I'm diving deep into the React ecosystem.
+        </p>
+        <p class="reveal reveal-delay-2">
+          What drives me isn't just making things look good — it's the challenge of making them
+          <strong>work flawlessly</strong> for real people. I approach every project with a
+          <strong>user-first mindset</strong>, a strong eye for visual hierarchy, and a habit
+          of reading documentation when everyone else gives up.
+        </p>
+        <div class="about-facts reveal reveal-delay-3">
+          <div class="fact">
+            <div class="fact-key">Location</div>
+            <div class="fact-val">Remote / Worldwide</div>
+          </div>
+          <div class="fact">
+            <div class="fact-key">Focus</div>
+            <div class="fact-val">Frontend + UI/UX</div>
+          </div>
+          <div class="fact">
+            <div class="fact-key">Learning</div>
+            <div class="fact-val">React &amp; Performance</div>
+          </div>
+          <div class="fact">
+            <div class="fact-key">Open To</div>
+            <div class="fact-val">Freelance &amp; Collabs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS
+  ════════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">⚡</div>
+        <div class="skill-card-title">Frontend Development</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">HTML5</span>
+          <span class="skill-tag highlight">CSS3</span>
+          <span class="skill-tag highlight">JavaScript ES6+</span>
+          <span class="skill-tag">Async / Await</span>
+          <span class="skill-tag">Promises</span>
+          <span class="skill-tag">Arrow Functions</span>
+          <span class="skill-tag">DOM Manipulation</span>
+          <span class="skill-tag">Fetch / Axios</span>
+          <span class="skill-tag">JSON Handling</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-icon">⚛️</div>
+        <div class="skill-card-title">React Ecosystem</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">React.js</span>
+          <span class="skill-tag">Components &amp; Props</span>
+          <span class="skill-tag">useState</span>
+          <span class="skill-tag">useEffect</span>
+          <span class="skill-tag">Component Reusability</span>
+          <span class="skill-tag">SPA Architecture</span>
+          <span class="skill-tag">Conditional Rendering</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-card-icon">🎨</div>
+        <div class="skill-card-title">UI/UX &amp; Design</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">Responsive Design</span>
+          <span class="skill-tag highlight">Mobile-First</span>
+          <span class="skill-tag">User-Centered Design</span>
+          <span class="skill-tag">Visual Hierarchy</span>
+          <span class="skill-tag">Micro-interactions</span>
+          <span class="skill-tag">Wireframing</span>
+          <span class="skill-tag">Design Consistency</span>
+          <span class="skill-tag">Figma (Basics)</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-3">
+        <div class="skill-card-icon">⚙️</div>
+        <div class="skill-card-title">Dev Workflow &amp; Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">Git</span>
+          <span class="skill-tag highlight">GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Chrome DevTools</span>
+          <span class="skill-tag">Modular Code</span>
+          <span class="skill-tag">Code Readability</span>
+          <span class="skill-tag">Debugging</span>
+          <span class="skill-tag">Error Handling</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">🌐</div>
+        <div class="skill-card-title">Web Concepts</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">HTTP/HTTPS Basics</span>
+          <span class="skill-tag">Browser Rendering</span>
+          <span class="skill-tag">SEO Fundamentals</span>
+          <span class="skill-tag">Web Performance</span>
+          <span class="skill-tag">Lazy Loading</span>
+          <span class="skill-tag">Accessibility (a11y)</span>
+          <span class="skill-tag">API Integration</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-icon">🧠</div>
+        <div class="skill-card-title">Soft Skills</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">Analytical Thinking</span>
+          <span class="skill-tag highlight">Detail-Oriented</span>
+          <span class="skill-tag">Creative Problem Solving</span>
+          <span class="skill-tag">Continuous Learning</span>
+          <span class="skill-tag">Adaptability</span>
+          <span class="skill-tag">Documentation Reading</span>
+          <span class="skill-tag">UI Replication</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="github-banner reveal">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color:#a8ff3e;flex-shrink:0"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      <div>
+        <strong>GitHub Connected:</strong> These projects are deployed from the
+        <code>portfolio</code> repo. Push updates to <code>main</code> branch and
+        GitHub Pages will reflect changes automatically.
+      </div>
+    </div>
+
+    <!-- Real-World Projects (Featured) -->
+    <div class="projects-featured reveal">
+
+      <div class="project-card large">
+        <div class="proj-inner">
+          <div class="proj-top">
+            <span class="proj-type">Real-World App</span>
+            <span class="proj-status status-live">● Live</span>
+          </div>
+          <h3 class="proj-title">DevTrack — GitHub Issue Tracker</h3>
+          <p class="proj-desc">
+            A clean, minimal issue-tracker that connects to the GitHub REST API, letting developers
+            track open issues across multiple repos in one dashboard. Features search, label filtering,
+            and real-time status updates — no backend needed.
+          </p>
+          <div class="proj-tech">
+            <span class="tech-pill">JavaScript ES6+</span>
+            <span class="tech-pill">GitHub API</span>
+            <span class="tech-pill">Fetch</span>
+            <span class="tech-pill">CSS Grid</span>
+            <span class="tech-pill">Async/Await</span>
+            <span class="tech-pill">LocalStorage</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/AryanVex/portfolio" class="proj-link" target="_blank">GitHub <span class="proj-link-arrow">↗</span></a>
+            <a href="#" class="proj-link">Live Demo <span class="proj-link-arrow">↗</span></a>
+          </div>
+          <div class="proj-visual">01</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="proj-inner">
+          <div class="proj-top">
+            <span class="proj-type">Real-World App</span>
+            <span class="proj-status status-live">● Live</span>
+          </div>
+          <h3 class="proj-title">WeatherNow</h3>
+          <p class="proj-desc">
+            Geolocation-aware weather app using OpenWeatherMap API. Shows 5-day forecasts with
+            animated icons, air quality index, and offline fallback messaging.
+          </p>
+          <div class="proj-tech">
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">OpenWeather API</span>
+            <span class="tech-pill">Geolocation API</span>
+            <span class="tech-pill">CSS Animations</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/AryanVex/portfolio" class="proj-link" target="_blank">GitHub <span class="proj-link-arrow">↗</span></a>
+            <a href="#" class="proj-link">Live <span class="proj-link-arrow">↗</span></a>
+          </div>
+          <div class="proj-visual">02</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="proj-inner">
+          <div class="proj-top">
+            <span class="proj-type">Real-World App</span>
+            <span class="proj-status status-live">● Live</span>
+          </div>
+          <h3 class="proj-title">StudyBuddy</h3>
+          <p class="proj-desc">
+            Pomodoro-based focus timer with task lists, session history, and ambient sound controls.
+            Built to solve a real problem — distractions while studying.
+          </p>
+          <div class="proj-tech">
+            <span class="tech-pill">React.js</span>
+            <span class="tech-pill">useState / useEffect</span>
+            <span class="tech-pill">Web Audio API</span>
+            <span class="tech-pill">LocalStorage</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/AryanVex/portfolio" class="proj-link" target="_blank">GitHub <span class="proj-link-arrow">↗</span></a>
+            <a href="#" class="proj-link">Live <span class="proj-link-arrow">↗</span></a>
+          </div>
+          <div class="proj-visual">03</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Ongoing Project -->
+    <div style="margin-top:2px;">
+      <div class="project-card reveal">
+        <div class="proj-inner">
+          <div class="proj-top">
+            <span class="proj-type">Ongoing</span>
+            <span class="proj-status status-ongoing">⟳ In Progress</span>
+          </div>
+          <h3 class="proj-title" style="font-size:1.4rem;">LinkVault — Bookmark Manager with AI Tagging</h3>
+          <p class="proj-desc">
+            A browser-based bookmark organiser that lets users save URLs with auto-generated tags.
+            Currently integrating a free LLM API to suggest relevant categories based on page title
+            and description. React frontend + JSON file storage.
+          </p>
+          <div class="proj-tech">
+            <span class="tech-pill">React.js</span>
+            <span class="tech-pill">HuggingFace API</span>
+            <span class="tech-pill">JSON</span>
+            <span class="tech-pill">Custom Hooks</span>
+            <span class="tech-pill">CSS Modules</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/AryanVex/portfolio" class="proj-link" target="_blank">Work-in-Progress on GitHub <span class="proj-link-arrow">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tryout / Experimental -->
+    <div style="margin-top:32px;">
+      <p class="tryout-label">— Optional Tryouts / Experiments</p>
+      <div class="projects-small reveal">
+        <div class="project-card small">
+          <div class="proj-inner">
+            <div class="proj-top">
+              <span class="proj-type" style="font-size:0.55rem;">Experiment</span>
+              <span class="proj-status status-tryout">Tryout</span>
+            </div>
+            <h3 class="proj-title">CSS-Only Clock</h3>
+            <p class="proj-desc" style="font-size:0.75rem;">Analog + digital clock using pure CSS transforms and custom properties. Zero JavaScript.</p>
+            <div class="proj-links" style="margin-top:16px;">
+              <a href="https://github.com/AryanVex/portfolio" class="proj-link" style="font-size:0.65rem;" target="_blank">GitHub <span class="proj-link-arrow">↗</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card small">
+          <div class="proj-inner">
+            <div class="proj-top">
+              <span class="proj-type" style="font-size:0.55rem;">Experiment</span>
+              <span class="proj-status status-tryout">Tryout</span>
+            </div>
+            <h3 class="proj-title">Typing Speed Test</h3>
+            <p class="proj-desc" style="font-size:0.75rem;">Quick vanilla JS challenge — measures WPM, accuracy, and highlights errors in real-time as you type.</p>
+            <div class="proj-links" style="margin-top:16px;">
+              <a href="https://github.com/AryanVex/portfolio" class="proj-link" style="font-size:0.65rem;" target="_blank">GitHub <span class="proj-link-arrow">↗</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card small">
+          <div class="proj-inner">
+            <div class="proj-top">
+              <span class="proj-type" style="font-size:0.55rem;">UI Clone</span>
+              <span class="proj-status status-tryout">Tryout</span>
+            </div>
+            <h3 class="proj-title">Spotify UI Clone</h3>
+            <p class="proj-desc" style="font-size:0.75rem;">Pixel-perfect replication of Spotify's now-playing screen. Built to sharpen CSS Grid and Flexbox skills.</p>
+            <div class="proj-links" style="margin-top:16px;">
+              <a href="https://github.com/AryanVex/portfolio" class="proj-link" style="font-size:0.65rem;" target="_blank">GitHub <span class="proj-link-arrow">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       LEARNING JOURNEY
+  ════════════════════════════════════════════ -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <span class="section-num">04</span>
+      <h2 class="section-title">My Journey</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-period">2024 — Present</div>
+        <div class="timeline-role">React &amp; Advanced JavaScript</div>
+        <div class="timeline-org">Self-Directed Learning + Open Source Contributions</div>
+        <p class="timeline-desc">Transitioned from vanilla JS to React, building multiple real-world projects using hooks, component architecture, and API integration. Started contributing to small open-source repos on GitHub to learn collaboration workflows.</p>
+        <div class="timeline-tags">
+          <span class="skill-tag highlight">React.js</span>
+          <span class="skill-tag">Custom Hooks</span>
+          <span class="skill-tag">API Integration</span>
+          <span class="skill-tag">Git Collaboration</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-period">2023</div>
+        <div class="timeline-role">Deep Dive — JavaScript ES6+</div>
+        <div class="timeline-org">Personal Projects &amp; Online Courses</div>
+        <p class="timeline-desc">Moved beyond basic JS syntax to master async/await, Promises, the Fetch API, and modular code patterns. Built a weather app and a GitHub tracker from scratch, debugging every issue through DevTools.</p>
+        <div class="timeline-tags">
+          <span class="skill-tag highlight">JavaScript ES6+</span>
+          <span class="skill-tag">Fetch API</span>
+          <span class="skill-tag">Async/Await</span>
+          <span class="skill-tag">DevTools</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-period">2022</div>
+        <div class="timeline-role">HTML, CSS &amp; Responsive Design</div>
+        <div class="timeline-org">Self-Taught Foundation</div>
+        <p class="timeline-desc">Started the developer journey with HTML5 semantics, CSS Grid &amp; Flexbox, and mobile-first responsive design. Cloned real websites to understand visual hierarchy and design consistency at a deep level.</p>
+        <div class="timeline-tags">
+          <span class="skill-tag highlight">HTML5</span>
+          <span class="skill-tag highlight">CSS3</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">UI Replication</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="contact-bg"></div>
+    <div class="section-header reveal">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-text reveal">
+        <h2>Let's build something <span class="outline">remarkable.</span></h2>
+        <p>I'm open to freelance projects, collaborations, and full-time opportunities. If you have an idea or a role that matches my skills, let's talk — I reply within 24 hours.</p>
+        <div class="contact-socials">
+          <a href="https://github.com/AryanVex/portfolio" class="social-link" target="_blank">
+            <span class="social-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </span>
+            <span class="social-name">github.com/AryanVex</span>
+            <span class="social-arrow">→</span>
+          </a>
+          <a href="mailto:aryan.vex@devmail.io" class="social-link">
+            <span class="social-icon">✉</span>
+            <span class="social-name">aryan.vex@devmail.io</span>
+            <span class="social-arrow">→</span>
+          </a>
+          <a href="#" class="social-link">
+            <span class="social-icon">in</span>
+            <span class="social-name">linkedin.com/in/aryanvex</span>
+            <span class="social-arrow">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="contact-form">
+          <div class="form-group">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-input" placeholder="John Doe" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" placeholder="hello@example.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button class="form-submit">Send Message →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer>
+    <p class="footer-copy">
+      © 2025 Aryan Vex. Connected to
+      <a href="https://github.com/AryanVex/portfolio" target="_blank">github.com/AryanVex/portfolio</a>
+    </p>
+    <p class="footer-made">Crafted with <span>♥</span> and too much caffeine</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+
+</body>
+</html>
